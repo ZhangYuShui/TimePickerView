@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dimiss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/bottom_layout"
+        android:background="@android:color/white"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="60dp"
+            android:layout_height="34dp"   
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@drawable/wheel_timebtn" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/pwSubmit"
+            android:textColor="@drawable/wheel_timebtn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:id="@+id/optionspicker"
+            layout="@layout/include_optionspicker" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/optionspicker"
+            android:layout_alignTop="@id/optionspicker"
+            android:background="@drawable/bg_above_timepicker" />
+    </RelativeLayout>
+
+</RelativeLayout>

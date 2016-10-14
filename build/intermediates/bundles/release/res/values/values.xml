@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wheel_timebtn_nor">#00c0ff</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="cancel">取消</string>
+    <string name="day">日</string>
+    <string name="hours">时</string>
+    <string name="minutes">分</string>
+    <string name="month">月</string>
+    <string name="pwSubmit">确定</string>
+    <string name="seconds">秒</string>
+    <string name="year">年</string>
+    <style name="common_button_red">
+        <item name="android:background">@drawable/common_red_btn_selector</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    <style name="timepopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/timepicker_anim_enter_bottom</item> <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/timepicker_anim_exit_bottom</item> <!-- 指定消失的动画xml -->
+    </style>
+</resources>
